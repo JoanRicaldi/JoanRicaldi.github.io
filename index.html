@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Joan Ricaldi | Portafolio</title>
+    <title>Joan Ricaldi | Ingeniería Mecatrónica</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -48,19 +48,19 @@
         }
 
         .hero h2 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             margin-bottom: 15px;
         }
 
         .hero p {
-            max-width: 600px;
+            max-width: 650px;
             margin: auto;
-            opacity: 0.8;
+            opacity: 0.85;
         }
 
         section {
             padding: 60px 20px;
-            max-width: 900px;
+            max-width: 950px;
             margin: auto;
         }
 
@@ -70,17 +70,16 @@
             padding-bottom: 10px;
         }
 
-        .skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            list-style: none;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
 
-        .skills li {
+        .card {
             background: #1e293b;
-            padding: 10px 15px;
-            border-radius: 8px;
+            padding: 20px;
+            border-radius: 10px;
         }
 
         footer {
@@ -106,43 +105,71 @@
 <header>
     <h1>Joan Ricaldi</h1>
     <nav>
-        <a href="#about">Sobre mí</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#projects">Proyectos</a>
+        <a href="#about">Perfil</a>
+        <a href="#skills">Competencias</a>
+        <a href="#knowledge">Conocimientos Técnicos</a>
         <a href="#contact">Contacto</a>
     </nav>
 </header>
 
 <div class="hero">
-    <h2>Ingeniería Electrónica & Desarrollo Técnico</h2>
-    <p>Interesado en análisis de circuitos, sistemas eléctricos y desarrollo de soluciones técnicas eficientes.</p>
+    <h2>Estudiante de Ingeniería Mecatrónica</h2>
+    <p>Formación en diseño mecánico, análisis dinámico de sistemas, programación estructurada en C++ y circuitos eléctricos en corriente directa y alterna.</p>
 </div>
 
 <main>
 
 <section id="about">
-    <h3>Sobre mí</h3>
-    <p>Estudiante enfocado en análisis de circuitos, simulación y programación básica en C++. Me interesa la resolución estructurada de problemas técnicos.</p>
+    <h3>Perfil Profesional</h3>
+    <p>Estudiante con base técnica en modelado y fabricación de piezas mecánicas, análisis de sistemas dinámicos (incluyendo vibraciones y ecuaciones diferenciales aplicadas a mecanismos con bielas), así como fundamentos sólidos en circuitos eléctricos y motores trifásicos. Interesado en automatización, control y desarrollo de soluciones mecatrónicas integradas.</p>
 </section>
 
-<section id="skills" class="skills">
-    <h3>Habilidades</h3>
-    <ul>
-        <li>C++</li>
-        <li>Análisis de Circuitos</li>
-        <li>Electrónica Analógica</li>
-        <li>Modelado Matemático</li>
-        <li>Resolución de Problemas</li>
-    </ul>
+<section id="skills">
+    <h3>Herramientas y Software</h3>
+    <div class="grid">
+        <div class="card">
+            <h4>Diseño Mecánico</h4>
+            <p>Autodesk Inventor (modelado de piezas y planos)</p>
+            <p>AutoCAD (dibujo técnico)</p>
+        </div>
+
+        <div class="card">
+            <h4>Programación</h4>
+            <p>C++ (iteraciones, subprogramas, estructuras básicas)</p>
+        </div>
+
+        <div class="card">
+            <h4>Análisis Técnico</h4>
+            <p>Dinámica de sistemas mecánicos</p>
+            <p>Vibraciones mecánicas</p>
+            <p>Ecuaciones diferenciales aplicadas</p>
+        </div>
+
+        <div class="card">
+            <h4>Electrotecnia</h4>
+            <p>Circuitos en corriente directa (DC)</p>
+            <p>Circuitos en corriente alterna (AC)</p>
+            <p>Motores trifásicos</p>
+        </div>
+    </div>
 </section>
 
-<section id="projects">
-    <h3>Proyectos</h3>
-    <ul>
-        <li>Simulación de circuito RL en AC</li>
-        <li>Análisis por método de mallas y nodos</li>
-        <li>Pequeños programas en C++ con modularización</li>
-    </ul>
+<section id="knowledge">
+    <h3>Áreas de Interés</h3>
+    <div class="grid">
+        <div class="card">
+            <p>Automatización industrial</p>
+        </div>
+        <div class="card">
+            <p>Control de sistemas dinámicos</p>
+        </div>
+        <div class="card">
+            <p>Integración mecánica-electrónica</p>
+        </div>
+        <div class="card">
+            <p>Desarrollo de proyectos técnicos</p>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
@@ -153,7 +180,7 @@
 </main>
 
 <footer>
-    <p>© 2026 Joan Ricaldi</p>
+    <p>© 2026 Joan Ricaldi | Ingeniería Mecatrónica</p>
 </footer>
 
 </body>
