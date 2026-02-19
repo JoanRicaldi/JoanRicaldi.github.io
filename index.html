@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Joan Ricaldi | Ingeniería Mecatrónica</title>
+    <title>Joan Patrick Ricaldi Llanos | Ingeniería Mecatrónica</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -27,10 +27,6 @@
             align-items: center;
         }
 
-        header h1 {
-            font-size: 1.5rem;
-        }
-
         nav a {
             color: #e2e8f0;
             text-decoration: none;
@@ -45,22 +41,22 @@
         .hero {
             text-align: center;
             padding: 80px 20px;
+            animation: fadeIn 1.2s ease-in-out;
         }
 
-        .hero h2 {
-            font-size: 2.3rem;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            max-width: 650px;
-            margin: auto;
-            opacity: 0.85;
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #334155;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
         }
 
         section {
             padding: 60px 20px;
-            max-width: 950px;
+            max-width: 900px;
             margin: auto;
         }
 
@@ -80,6 +76,11 @@
             background: #1e293b;
             padding: 20px;
             border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         footer {
@@ -87,6 +88,11 @@
             padding: 30px;
             background: #1e293b;
             margin-top: 40px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @media (max-width: 600px) {
@@ -100,87 +106,64 @@
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>Joan Ricaldi</h1>
     <nav>
-        <a href="#about">Perfil</a>
-        <a href="#skills">Competencias</a>
-        <a href="#knowledge">Conocimientos Técnicos</a>
-        <a href="#contact">Contacto</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#competencias">Competencias</a>
+        <a href="#contacto">Contacto</a>
     </nav>
 </header>
 
 <div class="hero">
+    <img src="perfil.jpeg" alt="Foto de Joan Ricaldi" class="profile-pic">
     <h2>Estudiante de Ingeniería Mecatrónica</h2>
-    <p>Formación en diseño mecánico, análisis dinámico de sistemas, programación estructurada en C++ y circuitos eléctricos en corriente directa y alterna.</p>
+    <p>Formación en diseño mecánico, análisis dinámico, programación en C++ y sistemas eléctricos industriales.</p>
 </div>
 
-<main>
-
-<section id="about">
+<section id="perfil">
     <h3>Perfil Profesional</h3>
-    <p>Estudiante con base técnica en modelado y fabricación de piezas mecánicas, análisis de sistemas dinámicos (incluyendo vibraciones y ecuaciones diferenciales aplicadas a mecanismos con bielas), así como fundamentos sólidos en circuitos eléctricos y motores trifásicos. Interesado en automatización, control y desarrollo de soluciones mecatrónicas integradas.</p>
+    <p>
+        Estudiante de Ingeniería Mecatrónica con base en modelado de piezas y planos técnicos,
+        análisis de vibraciones y ecuaciones diferenciales aplicadas a mecanismos,
+        así como conocimientos en circuitos DC/AC y motores trifásicos.
+    </p>
 </section>
 
-<section id="skills">
-    <h3>Herramientas y Software</h3>
+<section id="competencias">
+    <h3>Competencias Técnicas</h3>
     <div class="grid">
         <div class="card">
-            <h4>Diseño Mecánico</h4>
-            <p>Autodesk Inventor (modelado de piezas y planos)</p>
-            <p>AutoCAD (dibujo técnico)</p>
+            <h4>Diseño</h4>
+            <p>Autodesk Inventor</p>
+            <p>AutoCAD</p>
         </div>
 
         <div class="card">
             <h4>Programación</h4>
-            <p>C++ (iteraciones, subprogramas, estructuras básicas)</p>
+            <p>C++ (iteraciones y subprogramas)</p>
         </div>
 
         <div class="card">
-            <h4>Análisis Técnico</h4>
-            <p>Dinámica de sistemas mecánicos</p>
-            <p>Vibraciones mecánicas</p>
-            <p>Ecuaciones diferenciales aplicadas</p>
-        </div>
-
-        <div class="card">
-            <h4>Electrotecnia</h4>
-            <p>Circuitos en corriente directa (DC)</p>
-            <p>Circuitos en corriente alterna (AC)</p>
+            <h4>Ingeniería</h4>
+            <p>Dinámica y vibraciones</p>
+            <p>Ecuaciones diferenciales</p>
+            <p>Circuitos DC/AC</p>
             <p>Motores trifásicos</p>
         </div>
     </div>
 </section>
 
-<section id="knowledge">
-    <h3>Áreas de Interés</h3>
-    <div class="grid">
-        <div class="card">
-            <p>Automatización industrial</p>
-        </div>
-        <div class="card">
-            <p>Control de sistemas dinámicos</p>
-        </div>
-        <div class="card">
-            <p>Integración mecánica-electrónica</p>
-        </div>
-        <div class="card">
-            <p>Desarrollo de proyectos técnicos</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
+<section id="contacto">
     <h3>Contacto</h3>
     <p>Email: tuemail@email.com</p>
 </section>
 
-</main>
-
 <footer>
-    <p>© 2026 Joan Ricaldi | Ingeniería Mecatrónica</p>
+    <p>© 2026 Joan Ricaldi</p>
 </footer>
 
 </body>
